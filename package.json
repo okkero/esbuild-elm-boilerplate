@@ -1,0 +1,18 @@
+{
+  "name": "esbuild-elm-boilerplate",
+  "version": "1.0.0",
+  "license": "Proprietary",
+  "private": true,
+  "scripts": {
+    "build": "node ./build.js",
+    "start": "node ./build.js --serve",
+    "watch": "node ./build.js --watch"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "elm": "0.19.1-5",
+    "esbuild": "0.14.2",
+    "esbuild-plugin-elm": "0.0.7",
+    "esbuild-sass-plugin": "1.8.0"
+  }
+}

@@ -1,0 +1,5 @@
+node_modules/
+elm-stuff/
+.idea/
+dist/
+config.local.json
