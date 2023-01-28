@@ -2,17 +2,18 @@
   "name": "esbuild-elm-boilerplate",
   "version": "1.0.0",
   "license": "Proprietary",
+  "type": "module",
   "private": true,
   "scripts": {
     "build": "node ./build.js",
-    "start": "node ./build.js --serve",
-    "watch": "node ./build.js --watch"
+    "start": "node ./build.js --serve"
   },
   "dependencies": {},
   "devDependencies": {
+    "@chialab/esbuild-plugin-html": "0.17.2",
     "elm": "0.19.1-5",
-    "esbuild": "0.14.2",
-    "esbuild-plugin-elm": "0.0.7",
-    "esbuild-sass-plugin": "1.8.0"
+    "esbuild": "0.17.5",
+    "esbuild-plugin-elm": "0.0.12",
+    "esbuild-sass-plugin": "2.4.5"
   }
 }

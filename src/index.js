@@ -1,4 +1,3 @@
-import './styles/main.scss';
 import {Elm} from './elm/Main.elm';
 
 const appContainer = document.createElement('div');

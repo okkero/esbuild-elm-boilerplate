@@ -1,10 +1,10 @@
-const esbuild = require('esbuild');
-const elmPlugin = require('esbuild-plugin-elm');
-const {sassPlugin} = require('esbuild-sass-plugin');
-const fs = require('fs/promises');
+import esbuild from 'esbuild';
+import htmlPlugin from '@chialab/esbuild-plugin-html';
+import elmPlugin from 'esbuild-plugin-elm';
+import {sassPlugin} from 'esbuild-sass-plugin';
+import fs from 'fs/promises';
 
 const serve = process.argv.includes('--serve');
-const watch = process.argv.includes('--watch');
 const prod = process.argv.includes('--prod');
 const host = '0.0.0.0';
 const port = 8080;
@@ -28,15 +28,14 @@ async function build() {
     console.log(`baseUrl: ${baseUrl}`);
 
     const buildOptions = {
-        entryPoints: ['src/index.js'],
+        entryPoints: ['src/index.html'],
+        assetNames: serve ? '[name]' : 'assets/[name]-[hash]',
+        chunkNames: serve ? '[ext]/[name]' : '[ext]/[name]-[hash]',
         bundle: true,
         outdir: 'dist',
-        loader: {
-            '.html': 'text',
-        },
-        watch,
         minify: prod,
         plugins: [
+            htmlPlugin(),
             elmPlugin({
                 optimize: prod,
                 debug: !prod,
@@ -52,19 +51,16 @@ async function build() {
     };
 
     if (serve) {
-        await esbuild.serve(
-            {
-                servedir: 'www',
-                host,
-                port,
-            },
-            {...buildOptions, outdir: 'www'}
-        );
+        const context = await esbuild.context(buildOptions);
+        await context.serve({
+            servedir: 'dist',
+            host,
+            port,
+        });
 
         console.log(`Serving on http://${host}:${port}/`);
     } else {
         await esbuild.build(buildOptions);
-        await fs.copyFile('www/index.html', "dist/index.html");
     }
 }
 
