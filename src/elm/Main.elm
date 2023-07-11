@@ -3,6 +3,7 @@ module Main exposing (main)
 import Browser exposing (Document, UrlRequest)
 import Browser.Navigation as Navigation
 import Html as H
+import Html.Events as E
 import Url exposing (Url)
 
 
@@ -14,6 +15,7 @@ type alias Flags =
 type alias Model =
     { environment : Environment
     , key : Navigation.Key
+    , count : Int
     }
 
 
@@ -25,6 +27,8 @@ type alias Environment =
 type Msg
     = UrlRequested UrlRequest
     | UrlChanged Url
+    | Decrement
+    | Increment
 
 
 main : Program Flags Model Msg
@@ -47,6 +51,7 @@ init flags url key =
     in
         ( { environment = environment
           , key = key
+          , count = 0
           }
         , Cmd.none
         )
@@ -67,11 +72,21 @@ update msg model =
             -- TODO
             ( model, Cmd.none )
 
+        Decrement ->
+            ( { model | count = model.count - 1 }, Cmd.none )
+
+        Increment ->
+            ( { model | count = model.count + 1 }, Cmd.none )
+
 
 view : Model -> Document Msg
 view model =
     { title = "Elm App"
-    , body = [ H.text "Hi" ]
+    , body =
+        [ H.button [ E.onClick Decrement ] [ H.text "-" ]
+        , H.text <| String.fromInt model.count
+        , H.button [ E.onClick Increment ] [ H.text "+" ]
+        ]
     }
 
 
