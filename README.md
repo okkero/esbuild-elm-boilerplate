@@ -31,3 +31,16 @@ yarn start
 ```
 
 The app should now be served at port 8080.
+
+### Build for production
+
+To build the app for production, run the following command:
+
+```bash
+yarn build --prod
+```
+
+(If you leave off the `--prod` flag, you will get a non-minified debug build with the Elm debugger enabled)
+
+When the app has finished building, you should find the output in `dist/prod`. These files can be served as-is using
+your favourite web server.
