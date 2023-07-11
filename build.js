@@ -9,6 +9,15 @@ const prod = process.argv.includes('--prod');
 const host = '0.0.0.0';
 const port = 8080;
 
+let outdir;
+if (serve) {
+    outdir = 'dist/serve';
+} else if (prod) {
+    outdir = 'dist/prod';
+} else {
+    outdir = 'dist/debug';
+}
+
 process.env.NODE_ENV = prod ? 'production' : 'development';
 
 async function build() {
@@ -32,7 +41,7 @@ async function build() {
         assetNames: serve ? '[name]' : 'assets/[name]-[hash]',
         chunkNames: serve ? '[ext]/[name]' : '[ext]/[name]-[hash]',
         bundle: true,
-        outdir: 'dist',
+        outdir,
         minify: prod,
         plugins: [
             htmlPlugin(),
@@ -53,7 +62,7 @@ async function build() {
     if (serve) {
         const context = await esbuild.context(buildOptions);
         await context.serve({
-            servedir: 'dist',
+            servedir: outdir,
             host,
             port,
         });
