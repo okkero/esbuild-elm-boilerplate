@@ -11,7 +11,7 @@
   "dependencies": {},
   "devDependencies": {
     "@chialab/esbuild-plugin-html": "0.17.2",
-    "elm": "0.19.1-5",
+    "elm": "0.19.1-6",
     "esbuild": "0.17.5",
     "esbuild-plugin-elm": "0.0.12",
     "esbuild-sass-plugin": "2.4.5"
