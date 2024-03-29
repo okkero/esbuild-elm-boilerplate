@@ -2,33 +2,32 @@
 # yarn lockfile v1
 
 
-"@chialab/esbuild-plugin-html@0.17.2":
-  version "0.17.2"
-  resolved "https://registry.yarnpkg.com/@chialab/esbuild-plugin-html/-/esbuild-plugin-html-0.17.2.tgz#6d498db1ad90daf343c37de7be4e0337fd6aa7d6"
-  integrity sha512-IoPRjmiLzoOzJBCJ5sFR5fEjYfQ6EMwuWL1VhZrw1IyDCK34zIqOwmkKk49Tw84VHGkPy/+RUsu8nNP1Ax6liQ==
+"@chialab/esbuild-plugin-html@0.18.2":
+  version "0.18.2"
+  resolved "https://registry.yarnpkg.com/@chialab/esbuild-plugin-html/-/esbuild-plugin-html-0.18.2.tgz#cf098d36dcece60aff3b43ec41b0fb44d50783cf"
+  integrity sha512-8dBqIZIL1tkLYyMko+HY8b80QoDOIGlydbIQO8ALLv4e59UO0MGQjFG3RCD0V5sMbpjeNrJ3MCKz29wGL16Wrg==
   dependencies:
-    "@chialab/esbuild-rna" "^0.17.3"
-    "@chialab/node-resolve" "^0.17.0"
+    "@chialab/esbuild-rna" "^0.18.1"
 
-"@chialab/esbuild-rna@^0.17.3":
-  version "0.17.8"
-  resolved "https://registry.yarnpkg.com/@chialab/esbuild-rna/-/esbuild-rna-0.17.8.tgz#1fd65a5aeaccddc30d8badfc126c3f7feaa757d2"
-  integrity sha512-hovU4W5zlyMnbJjexdczpQ9mcUfFsJuv9FWUhzpXiQwPprlp5lul+frTed9s8AyVDTDq2yq3Gx2Ac411QsXYGA==
+"@chialab/esbuild-rna@^0.18.1":
+  version "0.18.2"
+  resolved "https://registry.yarnpkg.com/@chialab/esbuild-rna/-/esbuild-rna-0.18.2.tgz#69368579b7e8a78db25a9c75731270f8663d06bd"
+  integrity sha512-ckzskez7bxstVQ4c5cxbx0DRP2teldzrcSGQl2KPh1VJGdO2ZmRrb6vNkBBD5K3dx9tgTyvskWp4dV+Fbg07Ag==
   dependencies:
-    "@chialab/estransform" "^0.17.4"
-    "@chialab/node-resolve" "^0.17.1"
+    "@chialab/estransform" "^0.18.0"
+    "@chialab/node-resolve" "^0.18.0"
 
-"@chialab/estransform@^0.17.4":
-  version "0.17.5"
-  resolved "https://registry.yarnpkg.com/@chialab/estransform/-/estransform-0.17.5.tgz#de99861bd5343f66528493fa507ec4254984b207"
-  integrity sha512-maJUFkwk0ie0L4VvDO74NDYyRvaTQAI0qmSmrms8bZxUkZ+zQZd1ByWKDCYTRwtR6AOzTvgEOl2ZvEG+OUKv/A==
+"@chialab/estransform@^0.18.0":
+  version "0.18.1"
+  resolved "https://registry.yarnpkg.com/@chialab/estransform/-/estransform-0.18.1.tgz#28d78bb6ffe32582298172ae72d3750c6e950e25"
+  integrity sha512-W/WmjpQL2hndD0/XfR0FcPBAUj+aLNeoAVehOjV/Q9bSnioz0GVSAXXhzp59S33ZynxJBBfn8DNiMTVNJmk4Aw==
   dependencies:
     "@parcel/source-map" "^2.0.0"
 
-"@chialab/node-resolve@^0.17.0", "@chialab/node-resolve@^0.17.1":
-  version "0.17.1"
-  resolved "https://registry.yarnpkg.com/@chialab/node-resolve/-/node-resolve-0.17.1.tgz#ef51948742901d58625cf0275d7b1eb094d4a1b9"
-  integrity sha512-YWaK0MKKeB0FILI6j7qiAlGoSC9MqJZDFXzlAgfOaMCbn8Feqh6njxv7mI3oVkdi7QwV6zPRaTN6hKig/NriMA==
+"@chialab/node-resolve@^0.18.0":
+  version "0.18.0"
+  resolved "https://registry.yarnpkg.com/@chialab/node-resolve/-/node-resolve-0.18.0.tgz#cedb5f8717628f591bb5d474bde2e0721dcce1a2"
+  integrity sha512-eV1m70Qn9pLY9xwFmZ2FlcOzwiaUywsJ7NB/ud8VB7DouvCQtIHkQ3Om7uPX0ojXGEG1LCyO96kZkvbNTxNu0Q==
 
 "@elm_binaries/darwin_arm64@0.19.1-0":
   version "0.19.1-0"

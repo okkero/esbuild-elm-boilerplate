@@ -10,7 +10,7 @@
   },
   "dependencies": {},
   "devDependencies": {
-    "@chialab/esbuild-plugin-html": "0.17.2",
+    "@chialab/esbuild-plugin-html": "0.18.2",
     "elm": "0.19.1-6",
     "esbuild": "0.20.2",
     "esbuild-plugin-elm": "0.0.12",
