@@ -1,0 +1,39 @@
+name: Check
+
+on:
+  pull_request:
+    types:
+      - opened
+      - reopened
+      - synchronize
+  push:
+    branches:
+      - main
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 23
+      - name: Install corepack
+        run: npm i -g corepack
+      - name: Enable Yarn cache
+        uses: actions/setup-node@v4
+        with:
+          node-version: 23
+          cache: yarn
+      - run: yarn --immutable
+      - uses: actions/cache@v4
+        with:
+          path: |
+            ~/.elm
+          key: ${{ runner.os }}-${{ hashFiles('elm.json') }}-elm
+
+      - name: Lint
+        run: yarn run lint
+        # Output to an actual .js file to get errors if Debug modules are used:
+      - run: node_modules/.bin/elm make src/elm/Main.elm --optimize --output=out.js

@@ -49,12 +49,12 @@ init flags url key =
         environment =
             { baseUrl = flags.baseUrl }
     in
-        ( { environment = environment
-          , key = key
-          , count = 0
-          }
-        , Cmd.none
-        )
+    ( { environment = environment
+      , key = key
+      , count = 0
+      }
+    , Cmd.none
+    )
 
 
 update : Msg -> Model -> ( Model, Cmd Msg )

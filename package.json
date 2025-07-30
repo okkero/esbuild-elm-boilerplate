@@ -6,14 +6,16 @@
   "private": true,
   "scripts": {
     "build": "node ./build.js",
-    "start": "node ./build.js --serve"
+    "start": "node ./build.js --serve",
+    "lint": "elm-format --validate src/elm"
   },
-  "dependencies": {},
   "devDependencies": {
     "@chialab/esbuild-plugin-html": "0.18.2",
     "elm": "0.19.1-6",
+    "elm-format": "0.8.8",
     "esbuild": "0.24.0",
     "esbuild-plugin-elm": "0.0.12",
     "esbuild-sass-plugin": "3.3.1"
-  }
+  },
+  "packageManager": "yarn@4.9.2"
 }
