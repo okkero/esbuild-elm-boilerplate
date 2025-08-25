@@ -40,43 +40,47 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@chialab/esbuild-plugin-html@npm:0.18.2":
-  version: 0.18.2
-  resolution: "@chialab/esbuild-plugin-html@npm:0.18.2"
+"@chialab/esbuild-plugin-html@npm:0.19.0":
+  version: 0.19.0
+  resolution: "@chialab/esbuild-plugin-html@npm:0.19.0"
   dependencies:
-    "@chialab/esbuild-rna": "npm:^0.18.1"
+    "@chialab/esbuild-rna": "npm:^0.19.0"
   peerDependencies:
     htmlnano: ^2.0.0
   peerDependenciesMeta:
     htmlnano:
       optional: true
-  checksum: 10c0/ecf045e8c2c215d09fb9679ee9be9217c6de6f550f9e9f9d11e7c8390c4665e62f3461d43aa55a7f27eb4e023d42675e908debaff664be3d4d44bbbfb3eb7b59
+  checksum: 10c0/f2d26fa7197e3793b693966b545287fc5d948b146702f745b483e2b3288fa743fb3ac5de45ac87e2b6c943d14b6bdd10d485856fe3f68dfaeec7491d619c1a68
   languageName: node
   linkType: hard
 
-"@chialab/esbuild-rna@npm:^0.18.1":
-  version: 0.18.2
-  resolution: "@chialab/esbuild-rna@npm:0.18.2"
+"@chialab/esbuild-rna@npm:^0.19.0":
+  version: 0.19.0
+  resolution: "@chialab/esbuild-rna@npm:0.19.0"
   dependencies:
-    "@chialab/estransform": "npm:^0.18.0"
-    "@chialab/node-resolve": "npm:^0.18.0"
-  checksum: 10c0/ed1e542b85b121b02fa6fd9a554c7306d96ffd08e29905fa7959acd0011e9fba7c70702f4dee2e32d3a9b7b886767d319bb7cd6909ee765c364f828348329884
+    "@chialab/estransform": "npm:^0.19.0"
+    "@chialab/node-resolve": "npm:^0.19.0"
+  checksum: 10c0/a546f341a055c3b95881b632ad05af34f8f63da664d4c4841c07afd517c50e4926739f09bab1386acb87ce3eea36aae544ac72b0367fa3ad86f1afbdfeaf056c
   languageName: node
   linkType: hard
 
-"@chialab/estransform@npm:^0.18.0":
-  version: 0.18.1
-  resolution: "@chialab/estransform@npm:0.18.1"
+"@chialab/estransform@npm:^0.19.0":
+  version: 0.19.0
+  resolution: "@chialab/estransform@npm:0.19.0"
   dependencies:
+    "@napi-rs/magic-string": "npm:^0.3.4"
     "@parcel/source-map": "npm:^2.0.0"
-  checksum: 10c0/0e58a740a44de0918a413e6ef85061a8c2e87d26d5ba3e9e819bf08636fd9630da78caec318fa95e66b1ad1f8aa7ea4e1f00e1b2d8d0720f2837d8eff3e6f63c
+    cjs-module-lexer: "npm:^1.2.2"
+    es-module-lexer: "npm:^1.0.0"
+    oxc-parser: "npm:^0.8.0"
+  checksum: 10c0/76d7d470be3c19956ffac82b9e8e5d55f625cdc01296a8b216434d88cfa10324494eb131d982e3c60b7b398289e587beb27869defe11cfb83ca78ded2711a919
   languageName: node
   linkType: hard
 
-"@chialab/node-resolve@npm:^0.18.0":
-  version: 0.18.0
-  resolution: "@chialab/node-resolve@npm:0.18.0"
-  checksum: 10c0/99ba3e219de064d0fb97079e3f715eae088f1b203825bf6a4ecb7c3bfc03db1dd6509a3e6d2c130d370200e29a5e2d43cde44ca3324377d4cad04d38582d1769
+"@chialab/node-resolve@npm:^0.19.0":
+  version: 0.19.0
+  resolution: "@chialab/node-resolve@npm:0.19.0"
+  checksum: 10c0/8478add739bc0f6dc42c39fbefe29435a6050f7bef0380c21f21e9ce8e1f8966e857f810cf4886fa0c75d960fea54241afe7997b7ba6ec46a314caf02e5472b0
   languageName: node
   linkType: hard
 
@@ -290,6 +294,201 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@napi-rs/magic-string-android-arm-eabi@npm:0.3.4":
+  version: 0.3.4
+  resolution: "@napi-rs/magic-string-android-arm-eabi@npm:0.3.4"
+  conditions: os=android & cpu=arm
+  languageName: node
+  linkType: hard
+
+"@napi-rs/magic-string-android-arm64@npm:0.3.4":
+  version: 0.3.4
+  resolution: "@napi-rs/magic-string-android-arm64@npm:0.3.4"
+  conditions: os=android & cpu=arm64
+  languageName: node
+  linkType: hard
+
+"@napi-rs/magic-string-darwin-arm64@npm:0.3.4":
+  version: 0.3.4
+  resolution: "@napi-rs/magic-string-darwin-arm64@npm:0.3.4"
+  conditions: os=darwin & cpu=arm64
+  languageName: node
+  linkType: hard
+
+"@napi-rs/magic-string-darwin-x64@npm:0.3.4":
+  version: 0.3.4
+  resolution: "@napi-rs/magic-string-darwin-x64@npm:0.3.4"
+  conditions: os=darwin & cpu=x64
+  languageName: node
+  linkType: hard
+
+"@napi-rs/magic-string-freebsd-x64@npm:0.3.4":
+  version: 0.3.4
+  resolution: "@napi-rs/magic-string-freebsd-x64@npm:0.3.4"
+  conditions: os=freebsd & cpu=x64
+  languageName: node
+  linkType: hard
+
+"@napi-rs/magic-string-linux-arm-gnueabihf@npm:0.3.4":
+  version: 0.3.4
+  resolution: "@napi-rs/magic-string-linux-arm-gnueabihf@npm:0.3.4"
+  conditions: os=linux & cpu=arm
+  languageName: node
+  linkType: hard
+
+"@napi-rs/magic-string-linux-arm64-gnu@npm:0.3.4":
+  version: 0.3.4
+  resolution: "@napi-rs/magic-string-linux-arm64-gnu@npm:0.3.4"
+  conditions: os=linux & cpu=arm64
+  languageName: node
+  linkType: hard
+
+"@napi-rs/magic-string-linux-arm64-musl@npm:0.3.4":
+  version: 0.3.4
+  resolution: "@napi-rs/magic-string-linux-arm64-musl@npm:0.3.4"
+  conditions: os=linux & cpu=arm64
+  languageName: node
+  linkType: hard
+
+"@napi-rs/magic-string-linux-x64-gnu@npm:0.3.4":
+  version: 0.3.4
+  resolution: "@napi-rs/magic-string-linux-x64-gnu@npm:0.3.4"
+  conditions: os=linux & cpu=x64
+  languageName: node
+  linkType: hard
+
+"@napi-rs/magic-string-linux-x64-musl@npm:0.3.4":
+  version: 0.3.4
+  resolution: "@napi-rs/magic-string-linux-x64-musl@npm:0.3.4"
+  conditions: os=linux & cpu=x64
+  languageName: node
+  linkType: hard
+
+"@napi-rs/magic-string-win32-arm64-msvc@npm:0.3.4":
+  version: 0.3.4
+  resolution: "@napi-rs/magic-string-win32-arm64-msvc@npm:0.3.4"
+  conditions: os=win32 & cpu=arm64
+  languageName: node
+  linkType: hard
+
+"@napi-rs/magic-string-win32-ia32-msvc@npm:0.3.4":
+  version: 0.3.4
+  resolution: "@napi-rs/magic-string-win32-ia32-msvc@npm:0.3.4"
+  conditions: os=win32 & cpu=ia32
+  languageName: node
+  linkType: hard
+
+"@napi-rs/magic-string-win32-x64-msvc@npm:0.3.4":
+  version: 0.3.4
+  resolution: "@napi-rs/magic-string-win32-x64-msvc@npm:0.3.4"
+  conditions: os=win32 & cpu=x64
+  languageName: node
+  linkType: hard
+
+"@napi-rs/magic-string@npm:^0.3.4":
+  version: 0.3.4
+  resolution: "@napi-rs/magic-string@npm:0.3.4"
+  dependencies:
+    "@napi-rs/magic-string-android-arm-eabi": "npm:0.3.4"
+    "@napi-rs/magic-string-android-arm64": "npm:0.3.4"
+    "@napi-rs/magic-string-darwin-arm64": "npm:0.3.4"
+    "@napi-rs/magic-string-darwin-x64": "npm:0.3.4"
+    "@napi-rs/magic-string-freebsd-x64": "npm:0.3.4"
+    "@napi-rs/magic-string-linux-arm-gnueabihf": "npm:0.3.4"
+    "@napi-rs/magic-string-linux-arm64-gnu": "npm:0.3.4"
+    "@napi-rs/magic-string-linux-arm64-musl": "npm:0.3.4"
+    "@napi-rs/magic-string-linux-x64-gnu": "npm:0.3.4"
+    "@napi-rs/magic-string-linux-x64-musl": "npm:0.3.4"
+    "@napi-rs/magic-string-win32-arm64-msvc": "npm:0.3.4"
+    "@napi-rs/magic-string-win32-ia32-msvc": "npm:0.3.4"
+    "@napi-rs/magic-string-win32-x64-msvc": "npm:0.3.4"
+  dependenciesMeta:
+    "@napi-rs/magic-string-android-arm-eabi":
+      optional: true
+    "@napi-rs/magic-string-android-arm64":
+      optional: true
+    "@napi-rs/magic-string-darwin-arm64":
+      optional: true
+    "@napi-rs/magic-string-darwin-x64":
+      optional: true
+    "@napi-rs/magic-string-freebsd-x64":
+      optional: true
+    "@napi-rs/magic-string-linux-arm-gnueabihf":
+      optional: true
+    "@napi-rs/magic-string-linux-arm64-gnu":
+      optional: true
+    "@napi-rs/magic-string-linux-arm64-musl":
+      optional: true
+    "@napi-rs/magic-string-linux-x64-gnu":
+      optional: true
+    "@napi-rs/magic-string-linux-x64-musl":
+      optional: true
+    "@napi-rs/magic-string-win32-arm64-msvc":
+      optional: true
+    "@napi-rs/magic-string-win32-ia32-msvc":
+      optional: true
+    "@napi-rs/magic-string-win32-x64-msvc":
+      optional: true
+  checksum: 10c0/e70305dc085bc92b4465c96fea10d7633660a8170489cf5b681389b2771feab629c56a1c8d920473fe0ad569063a168346f8ae2da6408f19e3d6e3e060382d14
+  languageName: node
+  linkType: hard
+
+"@oxc-parser/binding-darwin-arm64@npm:0.8.0":
+  version: 0.8.0
+  resolution: "@oxc-parser/binding-darwin-arm64@npm:0.8.0"
+  conditions: os=darwin & cpu=arm64
+  languageName: node
+  linkType: hard
+
+"@oxc-parser/binding-darwin-x64@npm:0.8.0":
+  version: 0.8.0
+  resolution: "@oxc-parser/binding-darwin-x64@npm:0.8.0"
+  conditions: os=darwin & cpu=x64
+  languageName: node
+  linkType: hard
+
+"@oxc-parser/binding-linux-arm64-gnu@npm:0.8.0":
+  version: 0.8.0
+  resolution: "@oxc-parser/binding-linux-arm64-gnu@npm:0.8.0"
+  conditions: os=linux & cpu=arm64 & libc=glibc
+  languageName: node
+  linkType: hard
+
+"@oxc-parser/binding-linux-arm64-musl@npm:0.8.0":
+  version: 0.8.0
+  resolution: "@oxc-parser/binding-linux-arm64-musl@npm:0.8.0"
+  conditions: os=linux & cpu=arm64 & libc=musl
+  languageName: node
+  linkType: hard
+
+"@oxc-parser/binding-linux-x64-gnu@npm:0.8.0":
+  version: 0.8.0
+  resolution: "@oxc-parser/binding-linux-x64-gnu@npm:0.8.0"
+  conditions: os=linux & cpu=x64 & libc=glibc
+  languageName: node
+  linkType: hard
+
+"@oxc-parser/binding-linux-x64-musl@npm:0.8.0":
+  version: 0.8.0
+  resolution: "@oxc-parser/binding-linux-x64-musl@npm:0.8.0"
+  conditions: os=linux & cpu=x64 & libc=musl
+  languageName: node
+  linkType: hard
+
+"@oxc-parser/binding-win32-arm64-msvc@npm:0.8.0":
+  version: 0.8.0
+  resolution: "@oxc-parser/binding-win32-arm64-msvc@npm:0.8.0"
+  conditions: os=win32 & cpu=arm64
+  languageName: node
+  linkType: hard
+
+"@oxc-parser/binding-win32-x64-msvc@npm:0.8.0":
+  version: 0.8.0
+  resolution: "@oxc-parser/binding-win32-x64-msvc@npm:0.8.0"
+  conditions: os=win32 & cpu=x64
+  languageName: node
+  linkType: hard
+
 "@parcel/source-map@npm:^2.0.0":
   version: 2.1.1
   resolution: "@parcel/source-map@npm:2.1.1"
@@ -322,6 +521,13 @@ __metadata:
   dependencies:
     readdirp: "npm:^4.0.1"
   checksum: 10c0/4bb7a3adc304059810bb6c420c43261a15bb44f610d77c35547addc84faa0374265c3adc67f25d06f363d9a4571962b02679268c40de07676d260de1986efea9
+  languageName: node
+  linkType: hard
+
+"cjs-module-lexer@npm:^1.2.2":
+  version: 1.4.3
+  resolution: "cjs-module-lexer@npm:1.4.3"
+  checksum: 10c0/076b3af85adc4d65dbdab1b5b240fe5b45d44fcf0ef9d429044dd94d19be5589376805c44fb2d4b3e684e5fe6a9b7cf3e426476a6507c45283c5fc6ff95240be
   languageName: node
   linkType: hard
 
@@ -410,11 +616,18 @@ __metadata:
   languageName: node
   linkType: hard
 
+"es-module-lexer@npm:^1.0.0":
+  version: 1.7.0
+  resolution: "es-module-lexer@npm:1.7.0"
+  checksum: 10c0/4c935affcbfeba7fb4533e1da10fa8568043df1e3574b869385980de9e2d475ddc36769891936dbb07036edb3c3786a8b78ccf44964cd130dedc1f2c984b6c7b
+  languageName: node
+  linkType: hard
+
 "esbuild-elm-boilerplate@workspace:.":
   version: 0.0.0-use.local
   resolution: "esbuild-elm-boilerplate@workspace:."
   dependencies:
-    "@chialab/esbuild-plugin-html": "npm:0.18.2"
+    "@chialab/esbuild-plugin-html": "npm:0.19.0"
     elm: "npm:0.19.1-6"
     elm-format: "npm:0.8.8"
     esbuild: "npm:0.25.9"
@@ -693,6 +906,39 @@ __metadata:
   dependencies:
     wrappy: "npm:1"
   checksum: 10c0/5d48aca287dfefabd756621c5dfce5c91a549a93e9fdb7b8246bc4c4790aa2ec17b34a260530474635147aeb631a2dcc8b32c613df0675f96041cbb8244517d0
+  languageName: node
+  linkType: hard
+
+"oxc-parser@npm:^0.8.0":
+  version: 0.8.0
+  resolution: "oxc-parser@npm:0.8.0"
+  dependencies:
+    "@oxc-parser/binding-darwin-arm64": "npm:0.8.0"
+    "@oxc-parser/binding-darwin-x64": "npm:0.8.0"
+    "@oxc-parser/binding-linux-arm64-gnu": "npm:0.8.0"
+    "@oxc-parser/binding-linux-arm64-musl": "npm:0.8.0"
+    "@oxc-parser/binding-linux-x64-gnu": "npm:0.8.0"
+    "@oxc-parser/binding-linux-x64-musl": "npm:0.8.0"
+    "@oxc-parser/binding-win32-arm64-msvc": "npm:0.8.0"
+    "@oxc-parser/binding-win32-x64-msvc": "npm:0.8.0"
+  dependenciesMeta:
+    "@oxc-parser/binding-darwin-arm64":
+      optional: true
+    "@oxc-parser/binding-darwin-x64":
+      optional: true
+    "@oxc-parser/binding-linux-arm64-gnu":
+      optional: true
+    "@oxc-parser/binding-linux-arm64-musl":
+      optional: true
+    "@oxc-parser/binding-linux-x64-gnu":
+      optional: true
+    "@oxc-parser/binding-linux-x64-musl":
+      optional: true
+    "@oxc-parser/binding-win32-arm64-msvc":
+      optional: true
+    "@oxc-parser/binding-win32-x64-msvc":
+      optional: true
+  checksum: 10c0/d12347c3f1de20b971a5a1fb4a6d450c8dd183afc282473bbd2b2acd09aeb596cc04269292301eed0d147d01eb38faab1bb5073e9b46f0b15dd21e42dce4e686
   languageName: node
   linkType: hard
 
