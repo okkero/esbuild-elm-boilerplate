@@ -40,47 +40,47 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@chialab/esbuild-plugin-html@npm:0.19.0":
-  version: 0.19.0
-  resolution: "@chialab/esbuild-plugin-html@npm:0.19.0"
+"@chialab/esbuild-plugin-html@npm:0.19.1":
+  version: 0.19.1
+  resolution: "@chialab/esbuild-plugin-html@npm:0.19.1"
   dependencies:
-    "@chialab/esbuild-rna": "npm:^0.19.0"
+    "@chialab/esbuild-rna": "npm:^0.19.1"
   peerDependencies:
     htmlnano: ^2.0.0
   peerDependenciesMeta:
     htmlnano:
       optional: true
-  checksum: 10c0/f2d26fa7197e3793b693966b545287fc5d948b146702f745b483e2b3288fa743fb3ac5de45ac87e2b6c943d14b6bdd10d485856fe3f68dfaeec7491d619c1a68
+  checksum: 10c0/5d3952ac86541e676c1960927eb1f949a05fb7b41631b078c7fc923f0c2482a0da9a97f5092db26758c1f7c9fb991605e507e5f61d67e29e611910ff62da4266
   languageName: node
   linkType: hard
 
-"@chialab/esbuild-rna@npm:^0.19.0":
-  version: 0.19.0
-  resolution: "@chialab/esbuild-rna@npm:0.19.0"
+"@chialab/esbuild-rna@npm:^0.19.1":
+  version: 0.19.1
+  resolution: "@chialab/esbuild-rna@npm:0.19.1"
   dependencies:
-    "@chialab/estransform": "npm:^0.19.0"
-    "@chialab/node-resolve": "npm:^0.19.0"
-  checksum: 10c0/a546f341a055c3b95881b632ad05af34f8f63da664d4c4841c07afd517c50e4926739f09bab1386acb87ce3eea36aae544ac72b0367fa3ad86f1afbdfeaf056c
+    "@chialab/estransform": "npm:^0.19.1"
+    "@chialab/node-resolve": "npm:^0.19.1"
+  checksum: 10c0/2aad3131c6581b1e80ef40ea5ebedf22d13cd82751cf9acdf3e6d89b58e6f281597c5195bc866cd36c20339d922c6bbb5067a63e981f76e1e5e428bc28515ff2
   languageName: node
   linkType: hard
 
-"@chialab/estransform@npm:^0.19.0":
-  version: 0.19.0
-  resolution: "@chialab/estransform@npm:0.19.0"
+"@chialab/estransform@npm:^0.19.1":
+  version: 0.19.1
+  resolution: "@chialab/estransform@npm:0.19.1"
   dependencies:
     "@napi-rs/magic-string": "npm:^0.3.4"
     "@parcel/source-map": "npm:^2.0.0"
     cjs-module-lexer: "npm:^1.2.2"
     es-module-lexer: "npm:^1.0.0"
     oxc-parser: "npm:^0.8.0"
-  checksum: 10c0/76d7d470be3c19956ffac82b9e8e5d55f625cdc01296a8b216434d88cfa10324494eb131d982e3c60b7b398289e587beb27869defe11cfb83ca78ded2711a919
+  checksum: 10c0/467bfc80c84ecfa71f151fc8fc066c07a09a7cf63a2fc4eb6f6c7064d3a7d49ff2ee22bda80c38664630036b05a32ff21be9d580a9e1d3ff193c3380e5fdfde2
   languageName: node
   linkType: hard
 
-"@chialab/node-resolve@npm:^0.19.0":
-  version: 0.19.0
-  resolution: "@chialab/node-resolve@npm:0.19.0"
-  checksum: 10c0/8478add739bc0f6dc42c39fbefe29435a6050f7bef0380c21f21e9ce8e1f8966e857f810cf4886fa0c75d960fea54241afe7997b7ba6ec46a314caf02e5472b0
+"@chialab/node-resolve@npm:^0.19.1":
+  version: 0.19.1
+  resolution: "@chialab/node-resolve@npm:0.19.1"
+  checksum: 10c0/ba4ddaf70a370201252db49ec843072f5b8d2dd85579e52859b9c75b6dadecd656ae6a675c1347df3d0ae96f004d4e794ce896644f187e671772ea543018ab8c
   languageName: node
   linkType: hard
 
@@ -815,7 +815,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "esbuild-elm-boilerplate@workspace:."
   dependencies:
-    "@chialab/esbuild-plugin-html": "npm:0.19.0"
+    "@chialab/esbuild-plugin-html": "npm:0.19.1"
     elm: "npm:0.19.1-6"
     elm-format: "npm:0.8.8"
     esbuild: "npm:0.28.0"
